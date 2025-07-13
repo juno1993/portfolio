@@ -1,14 +1,5 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import 'vuetify/styles'
-import { createVuetify } from 'vuetify'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
-import '@mdi/font/css/materialdesignicons.css'
-
-const vuetify = createVuetify({
-  components,
-  directives,
-})
+import vuetify from './plugins/vuetify' // Vuetify 플러그인 임포트
 
 createApp(App).use(vuetify).mount('#app')

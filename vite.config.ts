@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [vue()],
   server: {
     watch: {
-      usePolling: true
+      usePolling: true // hot reload 설정
     }
   },
 })
